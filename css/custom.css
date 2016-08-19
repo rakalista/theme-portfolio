@@ -1,9 +1,12 @@
 body{
-    background-color: #fcfcfc;
+    background-color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container-fluid{
     width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .topo{
@@ -38,7 +41,7 @@ body{
     text-transform: uppercase;
     font-family: 'PT Sans Narrow', sans-serif;
 }
-@media only screen and (max-width: 450px) {
+@media (max-width: 450px) {
     .logo{
         font-size: 24px;
     }
@@ -55,6 +58,77 @@ body{
     nav .button-collapse i{
         font-size: 25px;
     }
+    .post-home h2{
+        font-size: 14px;
+    }
+}
+@media (min-width: 450px) {
+    .post-home h2{
+        font-size: 22px;
+    }
+}
+#blog{
+    margin-top:30px;
+}
+.section-title {
+    position: relative;
+    margin-bottom: 1em;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+    color: #757575;
+    margin-left: 10px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+}
+.section-title:before {
+    content: "";
+    position: absolute;
+    margin-right: 10px;
+    top: 50%;
+    left: 0;
+    width: 99%;
+    border-bottom: 4px solid #dddddd;
+}
+.section-title span {
+    position: relative;
+    display: inline-block;
+    padding-right: 1.4em;
+    background: #f0f0f0;
+}
+.section-title i {
+    padding: 6px;
+    border-radius: 50%;
+    color: #dddddd;
+    border: 4px solid #dddddd;
+    margin-right: 16px;
+    font-size: 24px;
+}
+.post-home{
+    background:#fff;
+    box-shadow: -1px 0px 15px -5px rgba(176,176,176,1);
+    border-radius: 0 0 2px 2px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.post-home h2{
+    margin: 0;
+    padding: 5px 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+.post-home a:link{
+    color:#333332;
+}
+section#trabalhos img{
+   -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    transition: all 0.2s ease-out;
+}
+section#trabalhos img:hover{
+   -webkit-filter: none; /* Chrome, Safari, Opera */
+    filter: none;
+    transition: all 0.2s ease-out;
 }
 .button-top{
     color: #fff;
@@ -62,4 +136,48 @@ body{
     padding: 0 8px;
     height: auto;
     line-height: normal;
+}
+
+p#creditos{
+    font-size:14px;
+    padding:10px 0;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+footer{
+    margin-top: 30px;
+}
+footer .get-in-touch {
+    padding: 30px 0;
+    text-align: center;
+}
+footer .get-in-touch h5 {
+    letter-spacing: 0.25em;
+    font-size: 20px;
+    color: #eee;
+    text-transform: uppercase;
+    margin-bottom: 0.5em !important;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+footer .get-in-touch p {
+    color: #eee;
+    margin: 0 auto 40px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 300;
+}
+footer .get-in-touch .follow_us i {
+    font-size: 25px;
+    width: 70px;
+    margin: 0 10px 0 0;
+    text-align: center;
+    transition: all 0.2s ease-out;
+    background: transparent;
+    opacity: 0.2;
+    color: #fff;
+}
+footer .get-in-touch .follow_us i:hover {
+    opacity: 1.0;
+    background: transparent;
 }

@@ -2,7 +2,90 @@ body{
     background-color: #f0f0f0;
     font-family: 'Open Sans', sans-serif;
 }
+strong {
+    font-weight: bold;
+}
+.both{
+    clear: both;
+}
+/* WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
 
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+/*************************/
 .container-fluid{
     width: 95%;
     margin-left: auto;
@@ -61,10 +144,19 @@ body{
     .post-home h2{
         font-size: 14px;
     }
+    h2.titulo-post{
+        font-size: 22px;
+    }
+    footer .get-in-touch p {
+        font-size: 14px;
+    }
 }
 @media (min-width: 450px) {
     .post-home h2{
         font-size: 22px;
+    }
+    h2.titulo-post{
+        font-size: 28px;
     }
 }
 #blog{
@@ -164,13 +256,13 @@ footer .get-in-touch p {
     color: #eee;
     margin: 0 auto 40px;
     line-height: 30px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 300;
 }
 footer .get-in-touch .follow_us i {
     font-size: 25px;
     width: 70px;
-    margin: 0 10px 0 0;
+    margin: 0 10px 20px 0;
     text-align: center;
     transition: all 0.2s ease-out;
     background: transparent;
@@ -180,4 +272,129 @@ footer .get-in-touch .follow_us i {
 footer .get-in-touch .follow_us i:hover {
     opacity: 1.0;
     background: transparent;
+}
+
+.clear{
+    margin: 0;
+    padding: 0;
+}
+/*POSTAGEM*/
+.info-post{
+    margin: 10px 0;
+}
+.postagem{
+    background:#fff;
+    box-shadow: -1px 0px 15px -5px rgba(176,176,176,1);
+    border-radius: 0 0 2px 2px;
+    padding: 20px;
+    margin: 15px 0;
+}
+h2.titulo-post{
+    text-align: center;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.conteudo-post h2{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+span.entry-post-footer{
+	padding: 10px 0;
+}
+span.entry-social{
+	text-align: right;
+	padding: 10px 0;
+}
+span.entry-tags{
+	padding: 10px 0;
+}
+span.social-buttons{
+	padding: 8px 10px;
+	border-radius: 3px;
+	color: #fff;
+	transition: all 0.2s linear;
+}
+span.social-buttons:hover{
+	opacity: 0.7;
+	transition: all 0.2s linear;
+}
+span.facebook{
+	padding: 8px 12px;
+	background: #3e64ad;
+}
+span.twitter{
+	padding: 8px 10px;
+	background: #6aadd1;
+}
+span.pinterest{
+	padding: 8px 10px;
+	background: #de010d;
+}
+span.googleplus{
+	padding: 8px 8px;
+	background: #d34836;
+}
+h3.leia-tambem{
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #3e4248;
+}
+.relacionados{
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: -1px 0px 15px -5px rgba(176,176,176,1);
+}
+.card-content{
+    padding: 10px;
+}
+.card-title{
+    text-align: justify;
+    line-height: 1.5;
+}
+.card-content a:link, .card-content a:visited{
+    color:#3e4248;
+}
+.card-content a:hover{
+    color:#039be5;
+    transition: all 0.2s ease-out;
+}
+
+/*BUSCA*/
+.buscar{
+    margin: 30px 0 0;
+    padding: 30px;
+    background: #f0f0f0;
+}
+::-webkit-input-placeholder {
+   color: #3e4248;
+   font-size:16px;
+   
+}
+/*CSS CUSTOM MATERIALIZE*/
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    border-color:#039be5;
+}
+/*CATEGORY*/
+img.category-post-image{
+    width: 150px;
+    height: 100px;
+    margin-right: 10px;
+}
+h2.titulo-post-category{
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+    text-transform: uppercase;
+    color: #6d6d6d;
+}
+.category-post-container p{
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+    padding: 0 10px;
+}
+.category-post-container{
+    padding:20px 10px;
 }

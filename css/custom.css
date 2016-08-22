@@ -398,3 +398,43 @@ h2.titulo-post-category{
 .category-post-container{
     padding:20px 10px;
 }
+.card .card-action{
+    margin-top:15px;
+}
+/*PAGNAV*/
+.pagination li.active{
+    background-color: #6d6d6d;
+}
+/*WORKS*/
+.collection{
+    margin: 15px 0;
+}
+img.work-post-image{
+    width: 150px;
+    height: 180px;
+    margin-right: 10px;
+}
+img.miniatura-work{
+    width: 85px;
+    height: 85px;
+    padding: 10px;
+    transition: all 0.8s ease-out;
+}
+img.miniatura-work:hover{
+    background-color:#f0f0f0;
+    transition: all 0.8s ease-out;
+}
+.works-post-container{
+    padding:10px 0;
+    margin-bottom: 15px;
+}
+img.works-post-image{
+    height: 180px;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    transition: all 0.5s ease-out;
+}
+img.works-post-image:hover{
+     -webkit-filter: none;
+    filter: none;
+}

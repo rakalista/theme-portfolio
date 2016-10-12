@@ -1,5 +1,7 @@
-# theme-portfolio
-Tema Wordpress - Desenvolvido para meu portfolio, FRONT-END 
+# Tema - Portfolio
 
-MaterializeCSS
-HTML5
+Front-end da template desenvolvida para uso no meu portfolio.
+
+### Frameworks utilizados
+
+[MaterializeCSS](http://materializecss.com) para auxilio no responsivo
